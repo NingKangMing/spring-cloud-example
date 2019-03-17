@@ -10,8 +10,6 @@ mybatis.log*
 .pom.xml.bak
 .tern-project
 .mymetadata
-*/*.classpath
 */bin
 /*.project
 *.MF
-.project
