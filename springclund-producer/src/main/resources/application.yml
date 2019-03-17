@@ -1,0 +1,27 @@
+# 运行时添加参数即可激活不同的prfiles:  --spring.profiles.active=app1
+---
+spring:
+  application:
+    name: spring-cloud-producer
+  profiles: app1
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+app:
+  name: app1
+---
+spring:
+  application:
+    name: spring-cloud-producer
+  profiles: app2
+server:
+  port: 9001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+app:
+  name: app2
